@@ -138,7 +138,7 @@ header.scrolled {
     right: 0;
     width: 60%;
     height: 100%;
-    background-image: url('hero.png');
+    background-image: url('hero_cruise_middle_aged.png');
     /* Fallback name, will use actual later */
     background-size: cover;
     background-position: center;
@@ -348,35 +348,116 @@ footer {
     transform: translateY(0);
 }
 
+/* Responsive Utility */
+.br-mobile {
+    display: none;
+}
+
+.br-desktop {
+    display: inline;
+}
+
 @media (max-width: 768px) {
-    .container {
-        padding: 0 1.5rem;
+    .br-mobile {
+        display: inline;
     }
 
-    .hero h1 {
-        font-size: 2.5rem;
+    .br-desktop {
+        display: none;
+    }
+
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    .section-padding {
+        padding: 4rem 0;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 80vh;
+        padding: 8rem 0 4rem;
+        text-align: center;
     }
 
     .hero-bg {
-        display: none;
+        width: 100%;
+        opacity: 0.3;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        word-break: keep-all;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
     }
 
     .hero-content {
         max-width: 100%;
-        text-align: center;
+        margin: 0 auto;
     }
 
     .problem-box {
         grid-template-columns: 1fr;
         margin-top: 0;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .stat-item h3 {
+        font-size: 2.5rem;
     }
 
     .sim-card {
         flex-direction: column;
     }
 
-    .stats-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+    .sim-info {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .sim-visual {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .amount-value {
+        font-size: 2rem;
+    }
+
+    .safety-grid {
+        grid-template-columns: 1fr !important;
+        gap: 3rem !important;
+    }
+
+    .safety-grid h2 {
+        font-size: 2rem !important;
+        text-align: center;
+    }
+
+    .safety-grid p {
+        text-align: center;
+    }
+
+    .contact-form {
+        padding: 2rem 1.5rem;
+    }
+
+    header .btn {
+        padding: 0.6rem 1.25rem;
+        font-size: 0.9rem;
     }
 }
