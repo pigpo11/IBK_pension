@@ -38,7 +38,7 @@ if (form) {
         btn.disabled = true;
 
         setTimeout(() => {
-            alert('상담 신청이 완료되었습니다. 전문 상담사가 곧 연락드리겠습니다.');
+            window.location.href = 'https://form.naver.com/response/uGJmdVycLEROFtSmcocaFg';
             btn.innerText = '신청 완료';
             form.reset();
         }, 1500);
